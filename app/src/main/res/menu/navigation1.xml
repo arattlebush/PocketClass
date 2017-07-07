@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_jieshao"
+
+        android:title="介绍"/>
+
+    <item
+        android:id="@+id/navigation_mulu"
+
+        android:title="目录"/>
+
+    <item
+        android:id="@+id/navigation_pingjia"
+
+        android:title="评论"/>
+
+</menu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="我是？"
+        android:textSize="30dp"
+        android:textColor="#FF4081"
+        />
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/button1"
+            android:layout_gravity="left"
+            app:layout_widthPercent="50%"
+            app:layout_heightPercent="100%"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_gravity="right"
+            app:layout_widthPercent="50%"
+            app:layout_heightPercent="100%"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>

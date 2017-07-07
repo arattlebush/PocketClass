@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.stx.vitamiodemo.StudentSignIn2Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_student_sign2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            />
+
+        <RelativeLayout
+            android:id="@+id/header2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:background="#87CEFF"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Student_header1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/timg"
+                android:layout_centerInParent="true"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                />
+            <TextView
+                android:id="@+id/studentname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                android:text="你的名字"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+            <Button
+                android:id="@+id/Offline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="离线课程"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape1"/>
+            <Button
+                android:id="@+id/news"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="我的消息"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape1"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/MYCLass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的课程:"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            android:textSize="20sp"
+            android:textColor="#0A0A0A"
+            android:layout_marginTop="10dp"
+            />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/recycle_view1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        />
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/nav_view6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/navigation" />
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

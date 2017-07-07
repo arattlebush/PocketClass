@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.stx.vitamiodemo.StudentActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/student_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        />
+
+    <RelativeLayout
+        android:id="@+id/header3"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:padding="10dp"
+        android:background="#90FF0000"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Student_header"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/timg"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:id="@+id/warning1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            android:text="你尚未登录"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Sign_in1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登   录"
+        android:layout_marginTop="55dp"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/shape"
+
+        />
+
+    <Button
+        android:id="@+id/register1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/shape"
+        android:text="注   册"/>
+
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/nav_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/navigation" />
+    </RelativeLayout>
+</LinearLayout>

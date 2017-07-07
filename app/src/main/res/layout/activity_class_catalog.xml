@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_classactivity1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        />
+
+
+    <io.vov.vitamio.widget.CenterLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ship1"
+        android:layout_below="@+id/toolbar_classactivity1"
+        >
+
+        <io.vov.vitamio.widget.VideoView
+            android:id="@+id/buffer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </io.vov.vitamio.widget.CenterLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/probar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="50dp"
+
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/download_rate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/load_rate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="" />
+    </LinearLayout>
+
+
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/nav_view_classcatalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ship1"
+
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation1"
+        app:itemTextColor="#FF4040"
+        app:elevation="30dp"/>
+    <ListView
+        android:id="@+id/classcatalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nav_view_class"
+        >
+
+    </ListView>
+
+
+
+
+
+
+</RelativeLayout>
