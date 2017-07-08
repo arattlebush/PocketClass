@@ -43,15 +43,15 @@ public class StudentActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v)
             {
-                Intent intent=new Intent(StudentActivity.this,StudentSignInActivity.class);
-                startActivity(intent);
+                Intent intent1=new Intent(StudentActivity.this,StudentSignInActivity.class);
+                startActivity(intent1);
             }
         });
         Button button2=(Button)findViewById(R.id.register1);
         button2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v)
             {
-
+                Intent intent2=new Intent(StudentActivity.this,RegisterActivity.class);
             }
         });
 

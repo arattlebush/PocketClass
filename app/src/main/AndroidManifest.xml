@@ -28,22 +28,24 @@
         <activity
             android:name=".StudentActivity"
             android:label="掌上课堂" />
-
-        <activity android:name=".StudentSignInActivity"
-            android:label="掌上课堂"
-            />
-        <activity android:name=".StudentSignIn2Activity"
-            android:label="掌上课堂"/>
+        <activity
+            android:name=".StudentSignInActivity"
+            android:label="掌上课堂" />
+        <activity
+            android:name=".StudentSignIn2Activity"
+            android:label="掌上课堂" />
         <activity
             android:name=".SettingsActivity"
             android:label="掌上课堂" />
-        <activity android:name=".ClassActivity"
-            android:label="掌上课堂"/>
-        <activity android:name=".ClassCatalogActivity"
-
-            android:label="掌上课堂"/>
-        <activity android:name=".ClassCommentActivity"
-            android:label="掌上课堂"/>
+        <activity
+            android:name=".ClassActivity"
+            android:label="掌上课堂" />
+        <activity
+            android:name=".ClassCatalogActivity"
+            android:label="掌上课堂" />
+        <activity
+            android:name=".ClassCommentActivity"
+            android:label="掌上课堂" />
         <!-- 必须初始化 -->
         <activity
             android:name="io.vov.vitamio.activity.InitActivity"
@@ -51,7 +53,7 @@
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateAlwaysHidden" />
-
+        <activity android:name=".RegisterActivity" android:label="掌上课堂"></activity>
     </application>
 
 </manifest>
