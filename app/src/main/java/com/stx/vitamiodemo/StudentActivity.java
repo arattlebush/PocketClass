@@ -52,6 +52,7 @@ public class StudentActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 Intent intent2=new Intent(StudentActivity.this,RegisterActivity.class);
+                startActivity(intent2);
             }
         });
 

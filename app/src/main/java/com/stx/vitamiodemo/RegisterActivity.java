@@ -105,12 +105,14 @@ public class RegisterActivity extends AppCompatActivity implements LoaderCallbac
         });
 
         mLoginFormView = findViewById(R.id.login_form);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.student_toolbar);
+        mProgressView = findViewById(R.id.login_progress);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_register);
         setSupportActionBar(toolbar);
         ActionBar actionBar=getSupportActionBar();//导航按钮
         if(actionBar!=null){
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+
 
 
     }
@@ -336,5 +338,4 @@ public class RegisterActivity extends AppCompatActivity implements LoaderCallbac
         }
         return true;
     }//响应事件
-
 }
